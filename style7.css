@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:aquamarine;
+}
+
+nav {
+  height: 30px;
+  background-color: rgb(40, 21, 38);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+}
+.containeritem{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: repeat(3,20vh);
+  grid-template-columns: repeat(3,20vh);
+  position: relative;
+}
+.box{
+  display: flex;
+  border:2px solid rgb(10, 9, 9);
+  font-size: 15vh;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(0, 6, 128);
+}
+
+.box:hover{
+  background-color:white;
+}
+
+.gameinfo{
+  padding: 22px;
+}
+
+.info{
+ padding: 32px;
+ font-size: 25px;
+}
+
+img{
+  width:0px;
+  transition: width 1s ease-in-out;
+}
+
+.bt-0{
+  border-top:0;
+}
+.bl-0{
+  border-left:0;
+}
+.br-0{
+  border-right:0;
+}
+.bb-0{
+  border-bottom:0;
+}
+
+#reset{
+  padding: 0 30px;
+  margin: 1px 30px;
+  background-color:rgb(247, 216, 247);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#reset:hover{
+  background-color: rgb(244, 174, 223);
+}
+.line{
+  width: 0vw;
+  height: 4px;
+  background-color:rgb(225, 29, 29);
+  transition: width 1s ease-in-out ;
+  position: absolute;
+}
